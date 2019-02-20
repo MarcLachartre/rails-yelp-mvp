@@ -1,0 +1,11 @@
+<h1>Restaurants#show</h1>
+<p>Find me in app/views/restaurants/show.html.erb</p>
+<h2><%= @restaurant.name %></h2>
+<p><%= @restaurant.address %><p>
+<p> <%=@restaurant.phone_number %> </p>
+
+<% fucks_given = @restaurant.reviews %>
+<% fucks_given.each do |fuck_given| %>
+<%= fuck_given.content %>
+<%= fuck_given.rating %>
+<% end %>
